@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
+
+if [ -f tests/requirements.txt ]; then
+    pip install -r tests/requirements.txt
+fi
+
 pytest
