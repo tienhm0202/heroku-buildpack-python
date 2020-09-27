@@ -4,4 +4,8 @@ if [ -f tests/requirements.txt ]; then
     pip install -r tests/requirements.txt
 fi
 
+if [ -f poetry.lock ]; then
+    pip install poetry && poetry install
+fi
+
 pytest
